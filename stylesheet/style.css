@@ -1,5 +1,46 @@
-html, body {
+html {
   margin : 0 auto;
-  width : 100%;
   height: 100%;
+  width : 100%;
+}
+
+body {
+  margin : 0 auto;
+  height: 100%;
+  width : 80%;
+}
+
+header, main {
+    padding: 20px 0px;
+}
+
+#logo img {
+  width : 50%;
+}
+.summary {
+  margin-top : 50px;
+  padding : 10px;
+  border-radius: 10px;
+  background-color: #EEE;
+
+}
+.summary{
+  font-size : 150%
+}
+
+.padded {
+  padding : 20px;
+}
+
+.summary h2 {
+  font-weight : bold;
+  font-size : 150%
+}
+
+.color-second {
+  color : #FA021B;
+}
+
+footer {
+  padding : 20px 0px;
 }
