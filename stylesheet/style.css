@@ -44,3 +44,7 @@ header, main {
 footer {
   padding : 20px 0px;
 }
+
+.medaillon {
+  max-width: 25%;
+}
