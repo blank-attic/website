@@ -10,40 +10,40 @@
 </head>
 <body class="container-fluid">
   <header>
-    <div id="logo" class="text-center">
-      <img class="img-responsive center-block"src="images/logo.png"></img> <!-- Ah bah bravo les gars c'est du propre haha -->
+    <div id="logo" class="center-block">
+      <img class="img-responsive" src="images/logo.png" alt="_Blank Belleville Coding Club">
     </div>
-    <section class="summary row"> <!-- TODO divide section in two columns with a title, an icon and a paragraph -->
+    <section class="summary row">
       <div class="row">
-      <section class="col-md-6">
+      <section class="col-xs-12 col-sm-6">
         <h2 class="text-center">_blank c’est quoi ?</h2>
         <p>
-            <i class="fa fa-question fa-3x fa-pull-left fa-fw" ></i>
+            <i class="corner-logo fa fa-question fa-3x fa-pull-left fa-fw" ></i>
           Le projet participatif _blank vise à initier gratuitement des jeunes à
           l'apprentissage du développement web ainsi qu'à la maîtrise des
           outils numériques
         </p>
       </section>
-      <section class="col-md-6">
+      <section class="col-xs-12 col-sm-6">
         <h2 class="text-center">Et qu'est-ce qu'on va faire ?</h2>
         <p>
-            <i class="fa fa-at fa-3x fa-pull-left fa-fw"></i>
+            <i class="corner-logo fa fa-at fa-3x fa-pull-left fa-fw"></i>
             Nous allons commencer par créer un site web qui servira d'espace d'expression libre au quartier
         </p>
       </section>
       </div>
       <div class="row">
-      <section class="col-md-6">
+      <section class="col-xs-12 col-sm-6">
         <h2 class="text-center">C'est pour qui ?</h2>
         <p>
-          <i class="fa fa-users fa-3x fa-pull-left fa-fw"></i>
+          <i class="corner-logo fa fa-users fa-3x fa-pull-left fa-fw"></i>
           Des jeunes motivés pour acquérir une compétence professionnelle tout en participant à la vie locale
         </p>
       </section>
-      <section class="col-md-6">
+      <section class="col-xs-12 col-sm-6">
         <h2 class="text-center">Et c'est quand ? Où ?</h2>
         <p>
-          <i class="fa fa-map fa-3x fa-pull-left  fa-fw"></i>
+          <i class="corner-logo fa fa-map fa-3x fa-pull-left  fa-fw"></i>
           Tous les mardis et jeudis de 19h30 à 21h30<br />
           Place Alphonse Allais, 5 rue de Tourtille à Paris dans le XXème
         </p>
@@ -177,7 +177,7 @@
           <div class="col-xs-12 col-md-4">
             <h3 class="text-center">Antonin Dupin</h3>
             <p class="text-center">Diplômé de Sciences Po Paris (Affaires Publiques)</p>
-            <p class="text-center">Etudiant en Sciences Sociales à l’Ecole Normale Supérieure (Ulm)</p>
+            <p class="text-center">Etudiant en Sciences Sociales à l’ENS</p>
             <p class="text-center">23 ans</p>
             <img src="images/antonin.jpg" class="img-circle img-responsive medaillon center-block" alt="Antonin Dupin">
             <h4 class="text-center">Coordinateur du projet</h4>
@@ -243,16 +243,99 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="myModalLabel">Formulaire d'inscription</h4>
         </div>
-        <div class="modal-body">
-            <h1>TODO Insert form</h1>
-            <!-- TODO faire Laisser une adresse mail et un numéro de tel bien visible dans cette case -->
+            <form class="form-horizontal" action="https://docs.google.com/forms/d/1bQcuIxjePmT9dh10kmfZBIQ0x0FD3cs29o2e6gNDmOI/formResponse"
+                method="POST" id="formul" target="_self">
+                <fieldset>
+                    <div class="modal-body">
 
-            <!-- TODO bootstrap horizontal form -->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-          <button type="button" class="btn btn-primary">S'inscrire</button>
-        </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="entry_2105112267">Nom</label>
+                        <div class="col-sm-4">
+                            <input id="entry_2105112267" name="entry.2105112267" type="text" placeholder="" class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="entry_1664012246">Prénom</label>
+                        <div class="col-sm-4">
+                            <input id="entry_1664012246" name="entry.1664012246" type="text" placeholder="" class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="entry_1997686112">Téléphone</label>
+                        <div class="col-sm-4">
+                            <input id="entry_1997686112" name="entry.1997686112" type="text" placeholder="Portable ou fixe" class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="entry_1995692567">e-mail</label>
+                        <div class="col-sm-4">
+                            <input id="entry_1995692567" name="entry.1995692567" type="text" placeholder="" class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="entry_1137385143">Adresse</label>
+                        <div class="col-sm-4">
+                            <textarea class="form-control" id="entry_1137385143" name="entry.1137385143" required=""></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="entry_1144047042">Age</label>
+                        <div class="col-sm-2">
+                            <input id="entry_1144047042" name="entry.1144047042" type="text" placeholder="" class="form-control input-md" required="">
+                        </div>
+                        <div class="col-sm-2">
+                            ans
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="entry_1800718973">Formation</label>
+                        <div class="col-sm-5">
+                            <input id="entry_1800718973" name="entry.1800718973" type="text" placeholder="Diplôme ou niveau d'études" class="form-control input-md" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="entry_548141232">Est-ce que tu as un ordinateur ?</label>
+                        <div class="col-sm-4">
+                            <div class="radio">
+                                <label for="radios-0">
+                                    <input type="radio" name="entry.2077397136" id="group_2077397136_1" value="Oui" checked="checked">
+                                    Oui
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="radios-1">
+                                    <input type="radio" name="entry.2077397136" id="group_2077397136_2" value="Non">
+                                    Non
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="entry_397171546">Qu'elle utilisation as-tu d'Internet ?</label>
+                        <div class="col-sm-4">
+                            <textarea class="form-control" id="entry_397171546" name="entry.397171546" required=""></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="entry_700554527">Pourquoi suivre la formation de _Blank ?</label>
+                        <div class="col-sm-4">
+                            <textarea class="form-control" id="entry_700554527" name="entry.700554527" required=""></textarea>
+                        </div>
+                    </div>
+                    <input type="hidden" name="draftResponse" value="[,,&quot;-7722164766259669065&quot;]">
+                    <input type="hidden" name="pageHistory" value="0">
+                    <input type="hidden" name="fbzx" value="-7722164766259669065"><br><br>
+                </div>
+
+                    <div class="modal-footer">
+
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                </div>
+
+                </fieldset>
+            </form>
+
       </div>
     </div>
   </div>
