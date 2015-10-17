@@ -14,9 +14,10 @@ header, main {
     padding: 20px 0px;
 }
 
-#logo img {
-  width : 50%;
+#logo {
+    min-width: 200px;
 }
+
 .summary {
   margin-top : 50px;
   padding : 10px;
@@ -25,7 +26,16 @@ header, main {
 
 }
 .summary{
-  font-size : 150%
+  font-size : 140%;
+}
+
+.summary .corner-logo {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.summary p {
+    text-align: justify;
 }
 
 .padded {
@@ -39,6 +49,7 @@ main section h2 {
 
 main section p {
  font-size : 18px;
+ text-align: justify;
 }
 
 .summary h2 {
@@ -49,14 +60,17 @@ main section p {
 .color-second {
   color : #FA021B;
 }
+
 .support-logo {
-  max-width : 200px;
-  margin-right: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
+
 footer {
   padding : 20px 0px;
 }
 
 .medaillon {
   max-width: 25%;
+  min-width: 250px
 }
