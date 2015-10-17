@@ -15,14 +15,7 @@ header, main {
 }
 
 #logo {
-  width : 50%;
-  min-width: 300px;
-}
-
-#logo img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    min-width: 200px;
 }
 
 .summary {
@@ -67,11 +60,12 @@ main section p {
 .color-second {
   color : #FA021B;
 }
+
 .support-logo {
-  max-width : 200px;
-  margin-left:15px;
-  margin-right: 15px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
+
 footer {
   padding : 20px 0px;
 }
