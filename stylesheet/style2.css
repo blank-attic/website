@@ -1,0 +1,344 @@
+/*
+  reset
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+=====================
+*/
+
+@font-face {
+    font-family: "BITE";
+    src: url(../fonts/bitwise.ttf) format("truetype");
+}
+
+/*
+ div
+*/
+
+.inner {
+    padding:50px;
+}
+
+.inner > section {
+    padding:60px 0px;
+    width:80%;
+    margin:0px auto;
+}
+
+div.style-1 {
+    background-color:#eff0f4;
+}
+
+div.style-2 {
+    background-color:#d0cdcd;
+}
+
+div.style-3 {
+    background-color:#dde2e3;
+}
+
+/*
+ jumbotron
+*/
+
+div.jumbotron {
+    height:100vh;
+    background-image:url('https://unsplash.it/1920/1080/?random');
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-size:cover;
+}
+
+/*
+ nav
+*/
+
+nav {
+    width:100%;
+    background-color:rgba(215,220,226,0.8);
+    position:fixed;
+    display:flex;
+    top:0;
+}
+
+nav > * {
+    display:inline-block;
+}
+
+#topbar > a > .brand {
+    max-height:40px;
+    margin:auto 20px;
+}
+
+nav > ul {
+    margin:0px;
+    padding:0px;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap:nowrap;
+}
+
+#menu > li {
+    line-height:inherit;
+    padding:20px 0px;
+}
+
+
+nav > ul > li::before {
+    content:"";
+    display:none;
+}
+
+#menu > li > a {
+    text-decoration:none;
+    color:black;
+    font-size:1em;
+    height:100%;
+    vertical-align:middle;
+    line-height:normal;
+    padding:20px 30px;
+}
+
+nav > ul > li > a:hover {
+    background-color:rgb(215,220,226);
+}
+
+#label-nav-checkbox {
+    display:none;
+    margin: auto 20px;
+}
+
+@media (max-width: 1200px) {
+    #label-nav-checkbox {
+        display:block;
+    }
+
+    #menu {
+        display:none;
+    }
+
+    #nav-checkbox:checked ~ #menu {
+        display:flex;
+        position:absolute;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 40px;
+        flex-direction: column;
+        text-align:center;
+    }
+
+    #menu > li {
+        width:100%;
+        background-color:rgb(215,220,226);
+    }
+
+    #topbar {
+        justify-content:space-between;
+    }
+}
+
+/*
+ title
+*/
+
+h1,h2,h3,h4,h5,h6 {
+    padding:10px;
+    font-family: 'Questrial', sans-serif;;
+}
+
+h1 {
+    font-size:2.5em;
+}
+
+h2 {
+    font-size:2em;
+}
+
+h3 {
+    font-size:1.75em;
+}
+
+h4 {
+    font-size:1.5em;
+}
+
+h5 {
+    font-size:1.4em;
+}
+
+h6 {
+    font-size:1.3em;
+}
+
+/*
+ text
+*/
+
+p,th,td,table,thead,i,em {
+    font-family: 'Questrial', sans-serif;
+    font-size:1.1em;
+    line-height:2em;
+}
+
+/*
+ list
+*/
+
+ul {
+    margin:20px 10px;
+}
+
+li {
+    font-family: 'Questrial', sans-serif;
+    font-size:1.1em;
+    line-height:2em;
+}
+
+li::before{
+    content:"\f120";
+    font-family:"FontAwesome";
+    margin-right:20px;
+    display:inline-block;
+}
+
+li > * {
+    margin:10px 20px;
+}
+
+li > p {
+    font-style:italic;
+}
+
+/*
+  cards
+*/
+
+div.cards {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-around;
+    text-align:center;
+}
+
+@media (max-width: 1200px) {
+    div.cards {
+        flex-direction:column;
+        flex-wrap:nowrap;
+    }
+
+    span.card {
+        max-width:initial !important;
+    }
+}
+
+.card_img {
+    padding:10px;
+    margin-left:auto;
+}
+
+.card_img > img {
+    border-radius:2%;
+    max-height:180px;
+    max-width:180px;
+    background-color:transparent;
+}
+
+span.card {
+    max-width:40%;
+    margin:30px 0px;
+    background-color:#dde2e3;
+    padding:20px;
+}
+
+.card > blockquote {
+    margin-top:20px;
+    font-family: 'Questrial', sans-serif;
+    line-height:1.5em;
+    font-style:italic;
+    text-align:left;
+}
+
+.card > blockquote::before {
+    content:"\f10d";
+    font-family:"FontAwesome";
+    margin-right:20px;
+    font-size:3em;
+    display:inline-block;
+    color:#938b8c;
+}
+
+/*
+ footer
+*/
+
+footer > ul {
+    display:flex;
+    justify-content:center;
+}
+
+footer > ul > li::before {
+    content:"";
+    display:none;
+}
+
+footer > ul > li > a {
+    color:black;
+}
+
+footer > ul > li > a:hover {
+    color:grey;
+}
