@@ -55,11 +55,6 @@ table {
 =====================
 */
 
-@font-face {
-    font-family: "BITE";
-    src: url(../fonts/bitwise.ttf) format("truetype");
-}
-
 /*
  div
 */
@@ -328,6 +323,11 @@ span.card {
 footer > ul {
     display:flex;
     justify-content:center;
+}
+
+footer > p {
+  text-align: center;
+	margin: 20px 10px;
 }
 
 footer > ul > li::before {
