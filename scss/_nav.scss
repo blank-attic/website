@@ -1,0 +1,176 @@
+@import "vars";
+
+$nav-anim-timing:1s;
+$default-transition:ease;
+
+// normal menu
+.nav {
+    position:fixed;
+    width:100%;
+    background-color:$nav-bg;
+    height:3em;
+    > ul {
+        list-style:none;
+        display:flex;
+        height:100%;
+        margin:0px;
+        > li {
+            height:100%;
+            > a {
+                display:block;
+                text-decoration: none;
+                text-align:center;
+                padding:.5em 2em;
+            }
+        }
+    }
+    .nav-logo {
+        height:100%;
+        > img {
+            height:100%;
+            margin:auto;
+        }
+    }
+}
+
+//mobile menu
+#mobile-nav {
+    height:100%;
+    > ul {
+        background-color:$nav-bg;
+        list-style:none;
+        padding:0px;
+        margin:0px;
+        > li {
+            > a {
+                display:block;
+                width:100%;
+                height:100%;
+                padding:20px;
+                text-decoration: none;
+                text-align:center;
+                -webkit-transition: left $nav-anim-timing;
+                transition: left $nav-anim-timing;
+                -webkit-transition-timing-function: $default-transition;
+                transition-timing-function: $default-transition;
+            }
+        }
+    }
+    &.left {
+        position:fixed;
+        width:25em;
+        height:100%;
+        left:-25em;
+        -webkit-transition: left $nav-anim-timing;
+        transition: left $nav-anim-timing;
+        -webkit-transition-timing-function: $default-transition;
+        transition-timing-function: $default-transition;
+        background-color:$nav-bg;
+        box-shadow:0px 0px 2px grey;
+    }
+    .nav-logo {
+        width:100%;
+        > img {
+            width:50%;
+            margin:auto;
+        }
+        padding:25px auto;
+        background-color:lighten($nav-bg,20%);
+    }
+}
+
+
+#mobile-nav-fill {
+    height:100%;
+    position:fixed;
+    width:75em;
+    right:-75em;
+}
+
+#label-nav-checkbox {
+    position:fixed;
+    left:2em;
+    top:2em;
+    color:white;
+    -webkit-transition: left $nav-anim-timing;
+    transition: left $nav-anim-timing;
+    -webkit-transition-timing-function: $default-transition;
+    transition-timing-function: $default-transition;
+    > .hamburger {
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: $menu-size;
+        width: $menu-size;
+        font-size: 0;
+        cursor: pointer;
+        transition: background 0.3s;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.hamburger span {
+    display: block;
+    height: $menu-size/6;
+    width: $menu-size;
+    background: $nav-bg;
+    margin-top:($menu-size/5)*2;
+    transition: background 0s 0.3s;
+    &:before,
+    &:after {
+        display: block;
+        position:absolute;
+        left: 0;
+        width: $menu-size;
+        height: $menu-size/6;
+        background-color: $nav-bg;;
+        content: "";
+        transition-property: top, transform;
+        transition-duration: 0.3s, 0.3s;
+        transition-delay: 0.3s, 0s;
+    }
+    &:before {
+        top: 0;
+    }
+    &:after {
+        top: ($menu-size/5)*4;
+    }
+    &.htx {
+        &:before,
+        &:after {
+            transition-duration: 0.3s, 0.3s;
+            transition-delay: 0.3s, 0s;
+        }
+    }
+}
+
+#nav-checkbox {
+    &:checked {
+        ~ #label-nav-checkbox {
+            left:27em;
+            .hamburger.htx {
+                > span {
+                    background: none;
+                    &:before {
+                        top:($menu-size/5)*2;
+                        transform: rotate(45deg);
+                        transition-delay: 0s, 0.3s;
+                    }
+                    &:after {
+                        top:($menu-size/5)*2;
+                        transform: rotate(-45deg);
+                        transition-delay: 0s, 0.3s;
+                    }
+                }
+            }
+        }
+        ~ #mobile-nav {
+            left:0;
+        }
+        ~ #mobile-nav-fill {
+            right:0;
+        }
+    }
+}

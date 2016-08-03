@@ -1,0 +1,14 @@
+@import "img";
+@import "vars";
+@import "presentation";
+@import "nav";
+@import "text";
+@import "animations";
+
+body,html {
+    background-color:$bg;
+}
+
+.main {
+    padding-top:50px;
+}

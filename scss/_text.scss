@@ -1,0 +1,13 @@
+@import url(https:\/\/fonts.googleapis.com\/css?family=Open+Sans);
+
+html,body {
+    font-family: 'Open Sans', sans-serif;
+    color:#2E2E2E;
+    line-height:2em;
+}
+
+label {
+    &:hover {
+        cursor:pointer;
+    }
+}

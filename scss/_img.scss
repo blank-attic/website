@@ -1,0 +1,19 @@
+.row.presentation {
+    > div {
+        > img {
+            border:1px solid lightgrey;
+            border-radius:5px;
+            padding:5px;
+            -webkit-transition: border 0.2s, box-shadow 0.2s;
+            transition: border 0.2s, box-shadow 0.2s;
+            &:hover {
+                border:1px solid lightblue;
+                box-shadow: 0px 0px 2px lightblue;
+            }
+        }
+    }
+}
+
+img {
+    display:block;
+}
