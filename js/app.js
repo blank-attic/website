@@ -13,15 +13,33 @@ function getAllElementsWithAttribute(attribute) {
     return matchingElements;
 }
 
-function listenToDataClose() {
+function listenToDataCheck() {
     var elements = getAllElementsWithAttribute("data-check");
     for (var e of elements) {
-        var v = e.getAttribute("data-check");
-        var etc = document.getElementById(v);
-        e.addEventListener("click", function(event){
+        e.addEventListener("click", function(){
+            var v = e.getAttribute("data-check"),
+            etc = document.getElementById(v);
             etc.checked = !etc.checked;
         });
     }
 }
 
-listenToDataClose();
+function listenToDataToggle() {
+    var elements = getAllElementsWithAttribute("data-toggle");
+    for (var e of elements) {
+        e.addEventListener("click", function(){
+            var v = this.getAttribute("data-toggle"),
+                etc = document.getElementById(v);
+
+            if (etc.className.indexOf("active") == -1) {
+                etc.className += " active";
+            } else {
+                etc.className = etc.className.replace(" active","");
+            }
+        });
+    }
+}
+
+listenToDataCheck();
+
+listenToDataToggle();

@@ -65,7 +65,40 @@
             }
         }
         &:hover {
-            background-color:darken($nav-bg,20%);
+            background-color:rgba(0,0,0,0.4);
+        }
+    }
+}
+
+.fade {
+    &.in.out {
+        & article {
+            opacity:0;
+            -webkit-transition: opacity 0.3s;
+            transition: opacity 0.3s;
+            -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+        transform:scaleY(0);
+        height:0px;
+        font-size:0;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transition-property: transform font-size height;
+        transition-property: transform font-size height;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease;
+        transition-timing-function: ease;
+        &.active {
+            transform:scaleY(1);
+            height:100%;
+            font-size:100%;
+            & article  {
+                opacity:1;
+            }
         }
     }
 }

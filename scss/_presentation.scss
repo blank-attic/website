@@ -10,3 +10,44 @@
     line-height:2.5em;
     background-color:#EEE;
 }
+
+.jumbotron {
+    > div {
+        padding:0px;
+    }
+}
+
+.cards {
+    .card {
+        text-align:center;
+        height:15em;
+        padding:0px;
+        background-size:contain;
+        > div {
+            height:100%;
+            width:100%;
+            vertical-align: middle;
+            display:table;
+            background-position:center;
+            line-height:50px;
+            &.classes {
+                background-image: url("../images/img-1.jpg");
+            }
+            &.teachers {
+                background-image: url("../images/img-2.jpg");
+            }
+            &.partners {
+                background-image: url("../images/img-3.jpg");
+            }
+            a {
+                color:white;
+                text-decoration:none;
+                display: table-cell;
+                padding:10px;
+                margin:auto;
+                font-weight:bold;
+                vertical-align:middle;
+            }
+        }
+    }
+}

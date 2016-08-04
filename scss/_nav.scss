@@ -8,7 +8,7 @@ $default-transition:ease;
     position:fixed;
     width:100%;
     background-color:$nav-bg;
-    height:3em;
+    height:$menu-size;
     > ul {
         list-style:none;
         display:flex;
@@ -84,6 +84,7 @@ $default-transition:ease;
     height:100%;
     position:fixed;
     width:75em;
+    cursor:pointer;
     right:-75em;
 }
 
