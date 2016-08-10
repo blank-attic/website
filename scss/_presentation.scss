@@ -1,5 +1,9 @@
+@import "vars";
+
 .presentation {
-    padding:5em;
+    width:75%;
+    padding:2em;
+    font-weight:bold;
     > * {
         margin:auto;
     }
@@ -8,7 +12,7 @@
 .more {
     padding:2em;
     line-height:2.5em;
-    background-color:#EEE;
+    background-color:darken($bg,10%);
 }
 
 .jumbotron {
@@ -17,8 +21,8 @@
     }
 }
 
-.cards {
-    .card {
+.links {
+    .link {
         text-align:center;
         height:15em;
         padding:0px;
@@ -45,9 +49,29 @@
                 display: table-cell;
                 padding:10px;
                 margin:auto;
+                font-size:2em;
                 font-weight:bold;
                 vertical-align:middle;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 64.063em) {
+    .presentation {
+        font-size:2em;
+        h1 {
+            line-height:1.3em;
+        }
+        p {
+            line-height:1.3em;
+        }
+    }
+    .more {
+        padding:1em 5em;
+        p {
+            line-height:1.8em;
+            text-align:justify;
         }
     }
 }

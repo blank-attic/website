@@ -1,0 +1,11 @@
+@import "vars";
+
+.main {
+    > footer {
+       ul {
+            > li {
+                list-style:none;
+            }
+        }
+    }
+}

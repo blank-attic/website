@@ -1,0 +1,27 @@
+.separator {
+    &.h {
+        height:0px;
+        width:100%;
+        margin:2em 0em;
+        &:before {
+            content:"";
+            display:block;
+            width:50%;
+            background-color:grey;
+            height:1px;
+            margin:auto;
+        }
+    }
+    &.v {
+        height:100%;
+        width:0px;
+        &:before {
+            content:"";
+            display:block;
+            width:1px;
+            background-color:grey;
+            height:50%;
+            margin:auto;
+        }
+    }
+}
