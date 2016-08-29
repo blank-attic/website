@@ -215,8 +215,16 @@ html, body {
 label:hover {
   cursor: pointer; }
 
-a:hover {
+a {
+  color: #1D1D1D;
+  text-decoration: none;
   cursor: pointer; }
+
+a.data-toggle {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s; }
+  a.data-toggle:hover {
+    color: #808080; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
@@ -228,12 +236,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right; }
 
 .socials li a {
-  text-decoration: none;
-  color: black;
+  color: #1D1D1D;
   -webkit-transition: color 0.3s;
   transition: color 0.3s; }
   .socials li a:hover {
-    color: grey; }
+    color: #808080; }
 
 .center {
   text-align: center; }
