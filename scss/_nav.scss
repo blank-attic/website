@@ -5,6 +5,7 @@ $default-transition:ease;
 
 // normal menu
 .nav {
+    z-index : 10;
     position:fixed;
     width:100%;
     background-color:$nav-bg;
@@ -36,6 +37,7 @@ $default-transition:ease;
 
 //mobile menu
 #mobile-nav {
+    z-index : 10;
     height:100%;
     > ul {
         background-color:$nav-bg;

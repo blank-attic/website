@@ -69,6 +69,7 @@ img {
       text-align: justify; } }
 
 .nav {
+  z-index: 10;
   position: fixed;
   width: 100%;
   background-color: #5BABE6;
@@ -93,6 +94,7 @@ img {
       margin: auto; }
 
 #mobile-nav {
+  z-index: 10;
   height: 100%; }
   #mobile-nav > ul {
     background-color: #5BABE6;
