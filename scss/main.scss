@@ -10,4 +10,11 @@
 
 body,html {
     background-color:$bg;
+    height: 100%;
+}
+
+@media only screen and (min-width: 64.063em) {
+    .main {
+        padding-top:$menu-size;
+    }
 }

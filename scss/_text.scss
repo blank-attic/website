@@ -28,3 +28,21 @@ h1,h2,h3,h4,h5,h6 {
         text-align:right;
     }
 }
+
+.socials {
+    li {
+        a {
+            text-decoration:none;
+            color:black;
+            -webkit-transition:color 0.3s;
+            transition:color 0.3s;
+            &:hover {
+                color:grey;
+            }
+        }
+    }
+}
+
+.center {
+    text-align:center;
+}
