@@ -19,6 +19,7 @@ a {
 }
 
 a.data-toggle {
+  color : #666;
   -webkit-transition:color 0.3s;
   transition:color 0.3s;
   &:hover {
