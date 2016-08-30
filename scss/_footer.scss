@@ -2,6 +2,7 @@
 
 .main {
     > footer {
+        margin-top:-2em;
         ul {
             > li {
                 list-style:none;
@@ -15,7 +16,7 @@
 
 @media only screen and (max-width: 64.063em) {
     footer {
-        ul, .copy {
+        ul {
             line-height:2em;
             font-size:2em;
         }

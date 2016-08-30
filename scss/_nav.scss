@@ -37,6 +37,7 @@ $default-transition:ease;
 
 //mobile menu
 #mobile-nav {
+    overflow-y: auto;
     z-index : 10;
     height:100%;
     > ul {
@@ -89,6 +90,7 @@ $default-transition:ease;
     width:75em;
     cursor:pointer;
     right:-75em;
+    display:none;
 }
 
 #label-nav-checkbox {
@@ -119,7 +121,7 @@ $default-transition:ease;
     display: block;
     height: $menu-size/6;
     width: $menu-size;
-    background: $nav-bg;
+    background: darken($nav-bg,20%);
     margin-top:($menu-size/5)*2;
     transition: background 0s 0.3s;
     &:before,
@@ -129,7 +131,7 @@ $default-transition:ease;
         left: 0;
         width: $menu-size;
         height: $menu-size/6;
-        background-color: $nav-bg;;
+        background-color: darken($nav-bg,20%);
         content: "";
         transition-property: top, transform;
         transition-duration: 0.3s, 0.3s;
@@ -189,5 +191,10 @@ $default-transition:ease;
                 }
             }
         }
+    }
+
+
+    #mobile-nav-fill {
+        display:block;
     }
 }

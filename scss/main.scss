@@ -5,8 +5,10 @@
 @import "text";
 @import "animations";
 @import "separator";
+@import "responsive";
 @import "footer";
 @import "cards";
+@import "scrollbar";
 
 body,html {
     background-color:$bg;

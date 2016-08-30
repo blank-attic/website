@@ -30,6 +30,11 @@ a.data-toggle {
 h1,h2,h3,h4,h5,h6 {
     font-weight:bold;
     margin:0px;
+    padding:1.67em 0px;
+}
+
+h2 {
+    text-decoration:underline;
 }
 
 .align {
@@ -43,4 +48,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .center {
     text-align:center;
+}
+
+article.presentation {
+    > section {
+        padding-top:1em;
+    }
 }

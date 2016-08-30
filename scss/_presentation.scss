@@ -7,6 +7,17 @@
     > * {
         margin:auto;
     }
+
+    .partner {
+        > img {
+            padding:0em 1.3em;
+            max-width:25%;
+            max-height:150px;
+        }
+        > p {
+            margin:0px;
+        }
+    }
 }
 
 .more {
