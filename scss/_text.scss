@@ -13,22 +13,23 @@ label {
 }
 
 a {
-  color : $link-color;
-  text-decoration:none;
-  cursor:pointer;
+    color : $link-color;
+    text-decoration:none;
+    cursor:pointer;
 }
 
 a.data-toggle {
-  color : #666;
-  -webkit-transition:color 0.3s;
-  transition:color 0.3s;
-  &:hover {
-      color:$link-color-hover;
-  }
+    color:#666;
+    -webkit-transition:color 0.3s;
+    transition:color 0.3s;
+    &:hover {
+        color:$link-color-hover;
+    }
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-weight:bold;
+    margin:0px;
 }
 
 .align {
@@ -37,19 +38,6 @@ h1,h2,h3,h4,h5,h6 {
     }
     &.right {
         text-align:right;
-    }
-}
-
-.socials {
-    li {
-        a {
-            color:$link-color;
-            -webkit-transition:color 0.3s;
-            transition:color 0.3s;
-            &:hover {
-                color:$link-color-hover;
-            }
-        }
     }
 }
 

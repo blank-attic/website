@@ -10,6 +10,7 @@ div.cards {
     flex-direction:row;
     justify-content:space-around;
     text-align:center;
+    font-weight:normal;
 }
 
 @media (max-width: 1200px) {
@@ -35,14 +36,13 @@ div.cards {
 }
 
 span.card {
-    max-width:40%;
-    margin:30px 0px;
+    max-width:45%;
+    margin:2.5% 0px;
     background-color:darken($bg,20%);
     padding:20px;
     > blockquote {
         margin-top:20px;
-        font-family: 'Questrial', sans-serif;
-        line-height:1.5em;
+        line-height:1.3em;
         font-style:italic;
         text-align:left;
         &:before {

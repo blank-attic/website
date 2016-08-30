@@ -230,7 +230,8 @@ a.data-toggle {
     color: #808080; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0px; }
 
 .align.left {
   text-align: left; }
@@ -238,15 +239,15 @@ h1, h2, h3, h4, h5, h6 {
 .align.right {
   text-align: right; }
 
-.socials li a {
+.center {
+  text-align: center; }
+
+a {
   color: #1D1D1D;
   -webkit-transition: color 0.3s;
   transition: color 0.3s; }
-  .socials li a:hover {
+  a:hover {
     color: #808080; }
-
-.center {
-  text-align: center; }
 
 .hvr.swp {
   -webkit-backface-visibility: hidden;
@@ -375,7 +376,8 @@ div.cards {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  text-align: center; }
+  text-align: center;
+  font-weight: normal; }
 
 @media (max-width: 1200px) {
   div.cards {
@@ -394,14 +396,13 @@ div.cards {
     background-color: transparent; }
 
 span.card {
-  max-width: 40%;
-  margin: 30px 0px;
+  max-width: 45%;
+  margin: 2.5% 0px;
   background-color: #a7becd;
   padding: 20px; }
   span.card > blockquote {
     margin-top: 20px;
-    font-family: 'Questrial', sans-serif;
-    line-height: 1.5em;
+    line-height: 1.3em;
     font-style: italic;
     text-align: left; }
     span.card > blockquote:before {

@@ -1,5 +1,14 @@
 @import "vars";
 
+a {
+    color:$link-color;
+    -webkit-transition:color 0.3s;
+    transition:color 0.3s;
+    &:hover {
+        color:$link-color-hover;
+    }
+}
+
 .hvr {
     &.swp {
         -webkit-backface-visibility: hidden;
