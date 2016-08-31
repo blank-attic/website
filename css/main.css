@@ -112,6 +112,9 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
+a.link-icon {
+  margin: 0px 10px; }
+
 a.data-toggle {
   color: #666;
   -webkit-transition: color 0.3s;
