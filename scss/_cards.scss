@@ -19,7 +19,7 @@ div.cards {
         flex-wrap:nowrap;
     }
 
-    span.card {
+    .card {
         max-width:initial !important;
     }
 }
@@ -35,16 +35,16 @@ div.cards {
     }
 }
 
-span.card {
+.card {
     max-width:45%;
-    margin:2.5% 0px;
+    margin-top: 20px;
     background-color:darken($bg,20%);
     padding:20px;
     > blockquote {
         margin-top:20px;
         line-height:1.3em;
         font-style:italic;
-        text-align:left;
+        text-align:justify;
         &:before {
             content:"\f10d";
             font-family:"FontAwesome";

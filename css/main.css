@@ -18,8 +18,10 @@ img {
 
 .presentation {
   width: 75%;
-  margin: 1.5em auto;
+  padding: 2em;
   font-weight: bold; }
+  .presentation > * {
+    margin: auto; }
   .presentation .partner > img {
     padding: 0em 1.3em;
     max-width: 25%;
@@ -126,7 +128,8 @@ a.data-toggle {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  margin: 1.5em 0px; }
+  margin: 0px;
+  padding: 1.67em 0px; }
 
 .align.left {
   text-align: left; }
@@ -136,6 +139,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .center {
   text-align: center; }
+
+article.presentation > section {
+  padding-top: 1em; }
 
 a {
   color: #1D1D1D;
@@ -416,7 +422,7 @@ div.cards {
   div.cards {
     flex-direction: column;
     flex-wrap: nowrap; }
-  span.card {
+  .card {
     max-width: initial !important; } }
 
 .card-img {
@@ -428,17 +434,17 @@ div.cards {
     margin: auto;
     background-color: transparent; }
 
-span.card {
+.card {
   max-width: 45%;
   margin: 2.5% 0px;
   background-color: #a7becd;
   padding: 20px; }
-  span.card > blockquote {
+  .card > blockquote {
     margin-top: 20px;
     line-height: 1.3em;
     font-style: italic;
-    text-align: left; }
-    span.card > blockquote:before {
+    text-align: justify; }
+    .card > blockquote:before {
       content: "\f10d";
       font-family: "FontAwesome";
       margin-right: 20px;
