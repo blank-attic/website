@@ -12,6 +12,10 @@
 img {
   display: block; }
 
+.logo-min {
+  max-width: 50px;
+  display: inline; }
+
 .presentation {
   width: 75%;
   padding: 2em;
