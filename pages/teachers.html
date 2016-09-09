@@ -7,47 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
   </head>
   <body>
-    <div class="nav show-for-large">
-      <ul>
-        <li>
-          <a href="index.html" class="nav-logo">
-            <img src="images/logo.png"/>
-          </a>
-        </li>
-        <li>
-          <a href="#who" class="hvr swp top" data-check="nav-checkbox">Qui sommes-nous ?</a>
-        </li>
-        <li>
-          <a href="#teachers" class="hvr swp top" data-check="nav-checkbox">Formateurs</a>
-        </li>
-      </ul>
-    </div>
-    <input type="checkbox" id="nav-checkbox" style="display:none;" />
-
-    <label id="label-nav-checkbox" class="hide-for-large" for="nav-checkbox">
-      <div class="hamburger htx">
-        <span>toggle menu</span>
-      </div>
-    </label>
-
-    <div id="mobile-nav-fill" data-check="nav-checkbox">
-      <!-- fill for click to release menu -->
-    </div>
-    <div id="mobile-nav" class="left hide-for-large">
-      <ul>
-        <li>
-          <a class="nav-logo" href="index.html" data-check="nav-checkbox">
-            <img src="images/logo.png" />
-          </a>
-        </li>
-        <li>
-          <a href="#who" class="hvr swp right" data-check="nav-checkbox">Qui sommes-nous ?</a>
-        </li>
-        <li>
-          <a href="#teachers" class="hvr swp right" data-check="nav-checkbox">Formateurs</a>
-        </li>
-      </ul>
-    </div>
+    @@include('./menu.html')
     <div class="main">
       <article id="who" class="presentation row expanded">
         <p>
@@ -165,23 +125,7 @@
         </div>
       </article>
       <div class="separator h"></div>
-      <footer class="website-footer">
-        <nav class="center">
-          <a href="index.html">Accueil</a> |
-          <a href="teachers.html">Enseignants</a> |
-          <a href="classes.html">Cours</a> |
-          <a href="partners.html">Partenaires</a>
-        </nav>
-        <nav class="center">
-          <a class="link-icon" title="Facebook _blank" href="https://facebook.com/blankblvl"><i class="fa fa-facebook"></i></a>
-          <a class="link-icon" title="Accès Moodle" href="http://moodle.bellevillecitoyenne.fr"><i class="fa fa-graduation-cap"></i></a>
-          <a class="link-icon" title="Nous contacter" href="mailto:blank@bellevillecitoyenne.fr"><i class="fa fa-envelope"></i></a>
-        </nav>
-        <div class="center copy">
-          <p>Un projet de l'association <a href="http://bellevillecitoyenne.fr"><img class="logo-min" src="images/logo-bc.jpg"></img></a></p>
-          <p>&copy; 2016 _blank</p>
-        </div>
-      </footer>
+      @@include('./footer.html')
     </div>
     <script type="text/javascript" src="js/app.js">
     </script>
