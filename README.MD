@@ -11,9 +11,10 @@ In project repository : run `gulp` (then modify scss sources, html and javascrip
 
 ### Gulp tasks
  - _styles_ : compile scss files into css  
- - _includes_ : run inclusion of fragments in /fragments into pages in /pages, and writes the result to the root directory.  
+ - _includes_ : run inclusion of fragments in /fragments into pages in /pages, and writes the result to the root directory.
+ - _static_ : copy all changed static resources to the build directory.
+ - _clean_ : deletes all the content of the build directory.
  - _default_ : watches changes and run either _styles_ or _includes_ depending on the modified sources.  
 
 ## Release
-To release the website, copy all HTML files in the root directory + _css_ , _fonts_, _js_  and _images_ folders to the target directory.
-TODO EOS : make a gulp task to put all content in a specific directory, ingored from git.
+To release the website, run _clean_, then _release_, then copy the content of the _build_ directory to the target server.

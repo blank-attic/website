@@ -10,6 +10,7 @@ var cleanCSS = require('gulp-clean-css');
 var DEST = './build/';
 
 gulp.task('styles', function() {
+    // TODO concat generated css and static, then minify
     gulp.src('scss/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(cleanCSS())
@@ -44,5 +45,5 @@ gulp.task('default',function() {
     gulp.watch('scss/*.scss', ['styles']);
     gulp.watch('./fragments/*.html', ['includes']);
     gulp.watch('./pages/*.html', ['includes']);
-    gulp.watch('./static/**', ['static']);
+    gulp.watch('./static/**/*', ['static']);
 });
