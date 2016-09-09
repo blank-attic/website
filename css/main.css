@@ -18,10 +18,8 @@ img {
 
 .presentation {
   width: 75%;
-  padding: 2em;
+  margin: 1.5em auto;
   font-weight: bold; }
-  .presentation > * {
-    margin: auto; }
   .presentation .partner > img {
     padding: 0em 1.3em;
     max-width: 25%;
@@ -128,8 +126,7 @@ a.data-toggle {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  margin: 0px;
-  padding: 1.67em 0px; }
+  margin: 1.5em 0px; }
 
 .align.left {
   text-align: left; }
@@ -139,9 +136,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .center {
   text-align: center; }
-
-article.presentation > section {
-  padding-top: 1em; }
 
 a {
   color: #1D1D1D;
