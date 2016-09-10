@@ -1,12 +1,13 @@
 @import "vars";
 
+.main {
+  width:75%;
+  margin:auto;
+  padding-top : $menu-size;
+}
+
 .presentation {
-    width:75%;
-    padding:2em;
     font-weight:bold;
-    > * {
-        margin:auto;
-    }
 
     .partner {
         > img {
@@ -21,7 +22,8 @@
 }
 
 .more {
-    padding:2em;
+    margin: 1.5em 0;
+    padding: 1.5em;
     line-height:2.5em;
     background-color:darken($bg,10%);
 }
@@ -29,6 +31,12 @@
 .jumbotron {
     > div {
         padding:0px;
+    }
+}
+
+@media only screen and (min-width: 64.063em) {
+    .jumbotron {
+        padding-top : $menu-size;
     }
 }
 
@@ -79,7 +87,6 @@
         }
     }
     .more {
-        padding:1em 5em;
         p {
             line-height:1.8em;
             text-align:justify;

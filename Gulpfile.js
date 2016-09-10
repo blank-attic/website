@@ -45,5 +45,5 @@ gulp.task('default',function() {
     gulp.watch('scss/*.scss', ['styles']);
     gulp.watch('./fragments/*.html', ['includes']);
     gulp.watch('./pages/*.html', ['includes']);
-    gulp.watch('./static/**/*', ['static']);
+    gulp.watch('./static/**/', ['static']);
 });
