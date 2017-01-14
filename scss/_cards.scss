@@ -20,7 +20,7 @@ div.cards {
     }
 
     .card {
-        max-width:initial !important;
+        width:90% !important;
     }
 }
 
@@ -28,15 +28,14 @@ div.cards {
     padding:10px;
     > img {
         border-radius:2%;
-        max-height:50%;
-        max-width:50%;
+        width:50%;
         margin:auto;
         background-color:transparent;
     }
 }
 
 .card {
-    max-width:45%;
+    width:25%;
     margin-top: 20px;
     background-color:darken($bg,20%);
     padding:20px;
